@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns=[
-	path('question',views.QuestionView.as_view(),name="question")
+	path('question/<str:field>',views.QuestionView.as_view(),name="question")
 ]
